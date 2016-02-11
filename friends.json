@@ -1,0 +1,20 @@
+{
+	"accounts": [
+		{
+			"username": "Joshua",
+			"password": "Joshua",
+			"email": "pinoyboy@gmail.com"			
+		},
+		{
+			"username": "Alicia",
+			"password": "Alicia",
+			"email": "AM@gmail.com"			
+		},
+		{
+			"username": "Michelle",
+			"password": "Michelle",
+			"email": "AM@gmail.com"	
+		}
+
+	]
+}

@@ -1,0 +1,63 @@
+body {
+	background-image:url("");
+	background-color: #dddddd;
+}
+
+
+
+#etabs .items {
+	margin: 0px 0px 0px 9px;
+	background-color: #ffffff;
+	border: solid 2px #ffffff;
+	border-left: solid 1px #ffffff;
+	height: 164px;
+	overflow: hidden;
+	width: 327px;
+}
+
+#etabs .items .grid {
+	line-height: 0px;
+	text-align: left;
+	height: 164px;
+	width: 345px;
+	overflow: auto;
+	display: none;
+}
+
+#etabs .items .grid img {
+	height: 80px;
+	width: 80px;
+	margin: 1px;
+}
+
+.left-marg {
+	margin-left: 9px!important;
+}
+
+#buttons {
+	margin: auto;
+	width: 332px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+#buttons button[type="button"] {
+	height: 35px;
+	width: 293px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	float: left;
+	margin-right: 4px;
+	border-bottom: solid 3px #aaaaaa;
+}
+
+.reset {
+	width: 35px;
+	height: 35px;
+	float: left;
+}
