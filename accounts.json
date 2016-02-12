@@ -2,13 +2,18 @@
 	"accounts": [
 		{
 			"username": "Gabriel",
-			"password": "Joshua",
+			"password": "Gaddi",
 			"email": "pinoyboy@gmail.com"			
 		},
 		{
 			"username": "Alicia",
-			"password": "Michelle",
-			"email": "AM@gmail.com"			
+			"password": "Ning",
+			"email": "Alicia@gmail.com"			
+		},
+		{
+			"username": "Michelle",
+			"password": "Nguyen",
+			"email": "Michelle@gmail.com"			
 		}
 
 	]
