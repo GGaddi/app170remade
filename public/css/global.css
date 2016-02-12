@@ -42,6 +42,18 @@
 	color: #000000;
 }
 
+#logout {
+	float: right;
+}
+
+#logout a {
+	line-height: 60px;
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	text-decoration: none;
+	color: #999999;
+}
+
 #navbar {
 	margin: auto;
 	text-align: center;

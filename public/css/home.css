@@ -41,14 +41,13 @@ body {
 
 button[type="button"] {
 	width: 250px;
-	height: 55px;
+	height: 35px;
 	border: 0px;
 	margin-top: 5px;
 	background-color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	letter-spacing: -2px;
-	line-height: 50px;
 	color: #000000;
 	border-bottom: solid 4px #aaaaaa;
 }
