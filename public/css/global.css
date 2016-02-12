@@ -44,10 +44,13 @@
 
 #logout {
 	float: right;
+	height: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 
 #logout a {
-	line-height: 60px;
+	line-height: 15px;
 	font-family: 'Patua One', cursive;
 	font-size: 15px;
 	text-decoration: none;
