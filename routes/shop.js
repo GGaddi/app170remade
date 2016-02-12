@@ -1,13 +1,20 @@
 // Get all of our friend data
 //var accountData = require('../accounts.json');
+var items = require('../shop-items.json');
+
+exports.itemInfo = function (req, res) {
+	var itemID = req.params.id;
+	var item = items[0];
+	console.log(item);
+}
 
 exports.view = function(req, res){
 	//console.log(accountData);
 	res.render('shop', {
-		'shop-items': [
+		'top-items': [
 			{
 				'name': 'red shirt',
-				'id': '001r',
+				'id': 't-001r',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
@@ -15,7 +22,7 @@ exports.view = function(req, res){
 			},
 			{
 				'name': 'blue shirt',
-				'id': '001b',
+				'id': 't-001bl',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
@@ -23,11 +30,170 @@ exports.view = function(req, res){
 			},
 			{
 				'name': 'green shirt',
-				'id': '001g',
+				'id': 't-001g',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
+			},
+			{
+				'name': 'white shirt',
+				'id': 't-001w',
+				'lvl': 1,
+				'price': 5,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect shirt for a new adventurer with no money.'			
+			},
+			{
+				'name': 'black shirt',
+				'id': 't-001bk',
+				'lvl': 1,
+				'price': 5,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect shirt for a new adventurer with no money.'			
+			}
+		],
+
+		'bottom-items': [
+			{
+				'name': 'red pants',
+				'id': 'b-001r',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect pants for a new adventurer with no money.'			
+			},
+			{
+				'name': 'blue pants',
+				'id': 'b-001bl',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect pants for a new adventurer with no money.'			
+			},
+			{
+				'name': 'green pants',
+				'id': 'b-001g',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect pants for a new adventurer with no money.'			
+			},
+			{
+				'name': 'white pants',
+				'id': 'b-001w',
+				'lvl': 1,
+				'price': 5,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect pants for a new adventurer with no money.'			
+			},
+			{
+				'name': 'black pants',
+				'id': 'b-001bk',
+				'lvl': 1,
+				'price': 5,
+				'img': 'http://placehold.it/105x105',
+				'description': 'the perfect pants for a new adventurer with no money.'			
+			}
+		],
+
+		'hat-items': [
+			{
+				'name': 'red hairband',
+				'id': 'h-001r',
+				'lvl': 3,
+				'price': 50,
+				'img': 'http://placehold.it/105x105',
+				'description': 'it keeps the hair out of your eyes... supposedly.'			
+			},
+			{
+				'name': 'blue hairband',
+				'id': 'h-001bl',
+				'lvl': 3,
+				'price': 50,
+				'img': 'http://placehold.it/105x105',
+				'description': 'it keeps the hair out of your eyes... supposedly.'			
+			},
+			{
+				'name': 'green hairband',
+				'id': 'h-001g',
+				'lvl': 3,
+				'price': 50,
+				'img': 'http://placehold.it/105x105',
+				'description': 'it keeps the hair out of your eyes... supposedly.'			
+			},
+			{
+				'name': 'white hairband',
+				'id': 'h-001w',
+				'lvl': 3,
+				'price': 55,
+				'img': 'http://placehold.it/105x105',
+				'description': 'it keeps the hair out of your eyes... supposedly.'
+			},
+			{
+				'name': 'black hairband',
+				'id': 'h-001bk',
+				'lvl': 3,
+				'price': 55,
+				'img': 'http://placehold.it/105x105',
+				'description': 'it keeps the hair out of your eyes... supposedly.'
+			}
+		],
+
+		'weapon-items': [
+			{
+				'name': 'wooden stick',
+				'id': 'w-001',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'we all have to start somewhere.'			
+			}
+		],
+
+		'style-items': [
+			{
+				'name': 'new adventurer (brown)',
+				'id': 's-001br',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'nothing wrong with keeping it simple.'
+			},
+			{
+				'name': 'new adventurer (black)',
+				'id': 's-001bk',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'nothing wrong with keeping it simple.'
+			},
+			{
+				'name': 'new adventurer (blonde)',
+				'id': 's-001bd',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'nothing wrong with keeping it simple.'
+			},
+			{
+				'name': 'new adventurer (red)',
+				'id': 's-001r',
+				'lvl': 1,
+				'price': 0,
+				'img': 'http://placehold.it/105x105',
+				'description': 'nothing wrong with keeping it simple.'
+			}
+		],
+
+		'pet-items': [
+			{
+				'name': 'rock',
+				'id': 'p-001',
+				'lvl': 5,
+				'price': 50,
+				'img': 'http://placehold.it/105x105',
+				'description': 'you can&apos;t even walk this.'
 			}
 		]
 	});

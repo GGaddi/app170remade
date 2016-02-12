@@ -83,8 +83,24 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB ONE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-1" class="grid grid-curr">
-						{{#each shop-items}}
-						<div class="entries" id="{{id}}">
+						{{#each top-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+							<div class="price">
+								<img src="imgs/moneys.png" class="coin"/>
+								{{price}}
+							</div>
+							<div class="level">LV{{lvl}}</div>
+							<img src="imgs/check.png" class="owned"/>
+						</div>
+						{{/each}}
+					</div>
+
+				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB TWO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+					<div id="tab-2" class="grid">
+						{{#each bottom-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
@@ -97,83 +113,70 @@
 					</div>
 
 
-
-				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB TWO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-					<div id="tab-2" class="grid">
-						<div class="entries">
-							<img src="http://placehold.it/105x105"/>
-							<div class="price">
-								<img src="imgs/moneys.png" class="coin"/>
-								2,000
-							</div>
-							<div class="level">LV20</div>
-							<img src="imgs/check.png" class="owned"/>
-						</div>
-
-					</div>
-
-
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB THREE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-3" class="grid">
-						<div class="entries">
-							<img src="http://placehold.it/105x105"/>
+						{{#each hat-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
-								3,000
+								{{price}}
 							</div>
-							<div class="level">LV20</div>
+							<div class="level">LV{{lvl}}</div>
 							<img src="imgs/check.png" class="owned"/>
 						</div>
-
+						{{/each}}
 					</div>
 
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FOUR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-4" class="grid">
-						<div class="entries">
-							<img src="http://placehold.it/105x105"/>
+						{{#each weapon-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
-								4,000
+								{{price}}
 							</div>
-							<div class="level">LV20</div>
+							<div class="level">LV{{lvl}}</div>
 							<img src="imgs/check.png" class="owned"/>
 						</div>
-
+						{{/each}}
 					</div>
 
 
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FIVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-5" class="grid">
-						<div class="entries">
-							<img src="http://placehold.it/105x105"/>
+						{{#each style-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
-								5,000
+								{{price}}
 							</div>
-							<div class="level">LV20</div>
+							<div class="level">LV{{lvl}}</div>
 							<img src="imgs/check.png" class="owned"/>
 						</div>
-
+						{{/each}}
 					</div>
 
 
-								<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB THREE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+					<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB SIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-6" class="grid">
-						<div class="entries">
-							<img src="http://placehold.it/105x105"/>
+						{{#each pet-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
-								6,000
+								{{price}}
 							</div>
-							<div class="level">LV20</div>
+							<div class="level">LV{{lvl}}</div>
 							<img src="imgs/check.png" class="owned"/>
 						</div>
-
+						{{/each}}
 					</div>
 
 				</div>	
