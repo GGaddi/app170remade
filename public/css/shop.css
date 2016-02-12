@@ -67,9 +67,16 @@ body {
 	width: 105px;
 	margin: 2px;
 	float: left;
-
+	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	background-color: #cccccc;
+}
+
+.thing {
+	height: 80px;
+	width: 80px;
+	margin: 15px 10px 10px 15px;
 }
 
 .entries .price {
@@ -77,7 +84,8 @@ body {
 	font-size: 14px;
 	height: 12px;
 	float: left;
-	margin-top: -10px;
+	margin-top: -15px;
+	margin-left: 5px!important;
 	position: relative;
 	z-index: 2;
 }
@@ -96,7 +104,7 @@ body {
 	font-family: 'Patua One',cursive;
 	font-size: 15px;
 	height: 15px;
-	margin-top: -95px;
+	margin-top: -90px;
 	width: 105px;
 	z-index: 2;
 }
@@ -105,8 +113,8 @@ body {
 	height: 12px;
 	width: 12px;
 	position: relative;
-	margin-top: -102px;
-	margin-right: 3px;
+	margin-top: -97px;
+	margin-right: 8px;
 	z-index: 3;
 	float: right;
 }

@@ -4,7 +4,7 @@
 		"id": "001r",
 		"lvl": 1,
 		"price": 0,
-		"img": "http://placehold.it/105x105",
+		"img": "http://placehold.it/80x80",
 		"description": "the perfect shirt for a new adventurer with no money."			
 	},
 	{
@@ -12,7 +12,7 @@
 		"id": "001b",
 		"lvl": 1,
 		"price": 0,
-		"img": "http://placehold.it/105x105",
+		"img": "http://placehold.it/80x80",
 		"description": "the perfect shirt for a new adventurer with no money."			
 	},
 	{
@@ -20,7 +20,7 @@
 		"id": "001g",
 		"lvl": 1,
 		"price": 0,
-		"img": "http://placehold.it/105x105",
+		"img": "http://placehold.it/80x80",
 		"description": "the perfect shirt for a new adventurer with no money."			
 	}
 ]
