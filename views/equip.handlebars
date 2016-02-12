@@ -72,14 +72,22 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB ONE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-1" class="grid grid-curr">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each top-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 					
 
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB TWO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-2" class="grid">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each bottom-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 				
 
@@ -87,7 +95,11 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB THREE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-3" class="grid">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each hat-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 				
 
@@ -95,7 +107,11 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FOUR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-4" class="grid">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each weapon-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 				
 
@@ -103,7 +119,11 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB FIVE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-5" class="grid">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each style-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 				
 
@@ -111,7 +131,11 @@
 				<!-- !!!!!!!!!!!!!!!!!!!!!!! TAB SIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 					<div id="tab-6" class="grid">
-						<img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/><img src="http://placehold.it/80x80"/>
+						{{#each pet-items}}
+						<div class="entries" id="{{name}}" alt="{{description}}">
+							<img src="{{img}}"/>
+						</div>
+						{{/each}}
 					</div>
 				</div>
 

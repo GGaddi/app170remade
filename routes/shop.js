@@ -17,7 +17,7 @@ exports.view = function(req, res){
 				'id': 't-001r',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/t-001r.png',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
 			},
 			{
@@ -56,44 +56,44 @@ exports.view = function(req, res){
 
 		'bottom-items': [
 			{
-				'name': 'red pants',
+				'name': 'red shorts',
 				'id': 'b-001r',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
-				'description': 'the perfect pants for a new adventurer with no money.'			
+				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
-				'name': 'blue pants',
+				'name': 'blue shorts',
 				'id': 'b-001bl',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
-				'description': 'the perfect pants for a new adventurer with no money.'			
+				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
-				'name': 'green pants',
+				'name': 'green shorts',
 				'id': 'b-001g',
 				'lvl': 1,
 				'price': 0,
 				'img': 'http://placehold.it/105x105',
-				'description': 'the perfect pants for a new adventurer with no money.'			
+				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
-				'name': 'white pants',
+				'name': 'white shorts',
 				'id': 'b-001w',
 				'lvl': 1,
 				'price': 5,
 				'img': 'http://placehold.it/105x105',
-				'description': 'the perfect pants for a new adventurer with no money.'			
+				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
-				'name': 'black pants',
+				'name': 'black shorts',
 				'id': 'b-001bk',
 				'lvl': 1,
 				'price': 5,
 				'img': 'http://placehold.it/105x105',
-				'description': 'the perfect pants for a new adventurer with no money.'			
+				'description': 'they&apos;re comfy and easy to wear.'			
 			}
 		],
 
