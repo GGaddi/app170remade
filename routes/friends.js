@@ -1,7 +1,7 @@
 // Get all of our friend data
-var accountData = require('../accounts.json');
+var usernameFriends = require('../friends.json');
 
 exports.view = function(req, res){
-	console.log(accountData);
-	res.render('friends', accountData);
+	console.log(usernameFriends);
+	res.render('friends', usernameFriends);
 };
