@@ -15,7 +15,7 @@
 }); */
 $(document).ready(function() {
 
-	var $email = $('<input type="text" name="email" placeholder="e-mail" class = "account"/>');
+	var $email = $('<input type="text" name="email" placeholder="e-mail" class = "account" id= "email" />');
 	//var $email = $('<input type="email" name="email" placeholder="e-mail"/>');
 	$('#register').click(function() {
 		//console.log("I am working.");
@@ -35,14 +35,13 @@ $(document).ready(function() {
 });
 
 function login(e) {
-	e.preventDefault();
 
 	console.log("User clicked LOGIN button");
 	$.get("/login", handleLogin);
 }
 
 function handleLogin(result){
-	console.log(result['accounts'].length);
+	//console.log(result['accounts'].length);
 	var value = 0;
 	var username;
 	var password;
@@ -120,14 +119,18 @@ function handleLogin(result){
 			location.href = '/';
 		}
 		else{
-			jsonObj = [];
-			item = {};
-    		item ["username"] = username;
+			jsonObj = {
+				"username": username,
+				"password": password,
+				"email": email
+			};
+    		/*item ["username"] = username;
     		item ["password"] = password;
     		item ["email"] = email;
 
-    		jsonObj.push(item);
+    		jsonObj.push(item); */
     		result["accounts"].push(jsonObj);
+    		console.log(result['accounts'].length);
     		/*$.getJSON('./accounts.json', function(data) {
 				console.log(data);
 				result["accounts"].push(jsonObj);

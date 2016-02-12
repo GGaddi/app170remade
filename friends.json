@@ -1,19 +1,28 @@
 {
-	"accounts": [
+	"friends": [
 		{
-			"username": "Joshua",
-			"password": "Joshua",
-			"email": "pinoyboy@gmail.com"			
+			"username": "Jasmine",
+			"level": "255",	
+			"avatar": "https://placehold.it/100x100",
+			"description": "We don't need to save - Gabriel"
 		},
 		{
 			"username": "Alicia",
-			"password": "Alicia",
-			"email": "AM@gmail.com"			
+			"level": "255",	
+			"avatar": "https://placehold.it/100x100",
+			"description": "DEATH"		
 		},
 		{
 			"username": "Michelle",
-			"password": "Michelle",
-			"email": "AM@gmail.com"	
+			"level": "255",	
+			"avatar": "https://placehold.it/100x100",
+			"description": "Hi!!!! o/"
+		},
+		{
+			"username": "Joshua",
+			"level": "255",
+			"avatar": "https://placehold.it/100x100",
+			"description": "WHEEEEEEEEEEEEEEEEEEEEEE"			
 		}
 
 	]
