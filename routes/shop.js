@@ -1,5 +1,12 @@
 // Get all of our friend data
 //var accountData = require('../accounts.json');
+var items = require('../shop-items.json');
+
+exports.itemInfo = function (req, res) {
+	var itemID = req.params.id;
+	var item = items[0];
+	console.log(item);
+}
 
 exports.view = function(req, res){
 	//console.log(accountData);
@@ -186,7 +193,7 @@ exports.view = function(req, res){
 				'lvl': 5,
 				'price': 50,
 				'img': 'http://placehold.it/105x105',
-				'description': 'you can&quot;t even walk this.'
+				'description': 'you can&apos;t even walk this.'
 			}
 		]
 	});

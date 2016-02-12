@@ -52,6 +52,7 @@ app.get('/home', home.view);
 app.get('/quest', quest.view);
 app.get('/self', self.view);
 app.get('/shop', shop.view);
+app.get('/item/:id', shop.itemInfo);
 
 // Example route
 // app.get('/users', user.list);
