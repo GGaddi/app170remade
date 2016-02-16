@@ -24,10 +24,15 @@ body {
 	display: none;
 }
 
-#etabs .items .grid img {
+.entries {
 	height: 80px;
 	width: 80px;
 	margin: 1px;
+}
+
+#etabs .items .grid img {
+	height: 80px;
+	width: 80px;
 }
 
 .left-marg {
