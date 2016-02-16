@@ -25,7 +25,7 @@ exports.view = function(req, res){
 				'id': 't-001bl',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/t-001bl.png',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
 			},
 			{
@@ -33,7 +33,7 @@ exports.view = function(req, res){
 				'id': 't-001g',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/t-001g.png',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
 			},
 			{
@@ -41,7 +41,7 @@ exports.view = function(req, res){
 				'id': 't-001w',
 				'lvl': 1,
 				'price': 5,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/t-001w.png',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
 			},
 			{
@@ -49,7 +49,7 @@ exports.view = function(req, res){
 				'id': 't-001bk',
 				'lvl': 1,
 				'price': 5,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/t-001bk.png',
 				'description': 'the perfect shirt for a new adventurer with no money.'			
 			}
 		],
@@ -60,7 +60,7 @@ exports.view = function(req, res){
 				'id': 'b-001r',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/b-001r.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
@@ -68,7 +68,7 @@ exports.view = function(req, res){
 				'id': 'b-001bl',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/b-001bl.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
@@ -76,7 +76,7 @@ exports.view = function(req, res){
 				'id': 'b-001g',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/b-001g.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
@@ -84,7 +84,7 @@ exports.view = function(req, res){
 				'id': 'b-001w',
 				'lvl': 1,
 				'price': 5,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/b-001w.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			},
 			{
@@ -92,7 +92,7 @@ exports.view = function(req, res){
 				'id': 'b-001bk',
 				'lvl': 1,
 				'price': 5,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/b-001bk.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			}
 		],

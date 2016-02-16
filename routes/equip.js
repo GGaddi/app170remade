@@ -21,7 +21,7 @@ exports.view = function(req, res){
 				'id': 'b-001r',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/80x80',
+				'img': 'imgs/items/b-001r.png',
 				'description': 'they&apos;re comfy and easy to wear.'			
 			}
 		],
