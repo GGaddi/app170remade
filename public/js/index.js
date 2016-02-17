@@ -121,16 +121,21 @@ function handleLogin(result){
 		}
 		else{
 			jsonObj = {
+				"id": result['accounts'].length+1, 
 				"username": username,
+				"charName": username, 
 				"password": password,
-				"email": email
+				"email": email,
+				"level": 1,
+				"currency": 1000,
+				"message": ""
 			};
     		/*item ["username"] = username;
     		item ["password"] = password;
     		item ["email"] = email;
 
     		jsonObj.push(item); */
-    		result["accounts"].push(jsonObj);
+    		//result["accounts"].push(jsonObj);
     		console.log(result['accounts'].length);
     		/*$.getJSON('./accounts.json', function(data) {
 				console.log(data);

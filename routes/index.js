@@ -9,13 +9,18 @@ exports.view = function(req, res){
 	var username = req.query.username;
 	var password =  req.query.password;
 	var email = req.query.email;
+	var level = 1;
+	var currency = 1000;
 	var message = "";
 	//console.log(username);
 	var newAccount = {
 		"id": id,
 		"username": req.query.username,
+		"charName": req.query.username,
 		"password": req.query.password,
 		"email": req.query.email,
+		"level": level,
+		"currency": currency,
 		"message": message
 	//$("#submitBtn")
 	//console.log(data);
