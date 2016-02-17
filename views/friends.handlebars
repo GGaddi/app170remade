@@ -28,7 +28,7 @@
 			</div>
 			<div class="flist">
 				<form id="flist">
-					<input type="text" name="search" placeholder="search" /><img src="http://placehold.it/35x35"/>
+					<input type="text" name="search" placeholder="search" /><img src="https://placehold.it/35x35"/>
 				</form>
 				
 				<div id="info">
@@ -39,7 +39,11 @@
 							<div class="level">{{level}}</div>
 							<div class="name">{{username}}</div>
 							<div class="desc">{{description}}</div>
-							<div class="prof">&nbsp;</div>
+							<div class="prof" style="background-image: url('/imgs/friends-viewprofile.png')">
+								<div class="profhover">
+									<a href="/profile/{{id}}"><img src="https://placehold.it/110x35"/></a>
+								</div>
+							</div>
 						</div>
 					<!--	
 						<div class="entry">
