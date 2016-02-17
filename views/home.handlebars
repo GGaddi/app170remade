@@ -10,7 +10,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 </head>
-
+<script type="text/javascript">
+var user = JSON.parse(localStorage.getItem("userAccount"));
+</script>
 <body>
 
 	<div id="wrap">
@@ -22,7 +24,12 @@
 				</div>
 				<div id="logout"><a href = "/"> log out </a></div>
 			</div>
-			<div class="name">myname</div>
+			<div class="name">
+				<script type="text/javascript">
+					var user = JSON.parse(localStorage.getItem("userAccount"));
+					document.write(user.charName);
+				</script>
+			</div>
 			<div class="image">
 				<img src="http://placehold.it/225x225"/> 
 				<div class="lvl">LVL 50</div>

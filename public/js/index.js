@@ -92,6 +92,7 @@ function handleLogin(result){
 			for(var i = 0; i < result['accounts'].length; i++){
 				if(result.accounts[i].username == username && result.accounts[i].password == password) {
 					allow = 1;
+					localStorage.setItem("userAccount", JSON.stringify(result.accounts[i]));
 					break;
 				}
 			}
@@ -136,6 +137,7 @@ function handleLogin(result){
 				result["accounts"].push(jsonObj);
 			}); */
 			jsonString = JSON.stringify(jsonObj);
+			localStorage.setItem("userAccount", jsonString);
 			//console.log("I am running");
 			console.log(jsonString);
 			console.log(jsonObj);
