@@ -4,25 +4,29 @@
 			"username": "Jasmine",
 			"level": "255",	
 			"avatar": "https://placehold.it/100x100",
-			"description": "We don't need to save - Gabriel"
+			"description": "We don't need to save - Gabriel",
+			"id": "1"
 		},
 		{
 			"username": "Alicia",
 			"level": "255",	
 			"avatar": "https://placehold.it/100x100",
-			"description": "DEATH"		
+			"description": "DEATH",
+			"id": "2"	
 		},
 		{
 			"username": "Michelle",
 			"level": "255",	
 			"avatar": "https://placehold.it/100x100",
-			"description": "Hi!!!! o/"
+			"description": "Hi!!!! o/",
+			"id": "3"
 		},
 		{
 			"username": "Joshua",
 			"level": "255",
 			"avatar": "https://placehold.it/100x100",
-			"description": "WHEEEEEEEEEEEEEEEEEEEEEE"			
+			"description": "WHEEEEEEEEEEEEEEEEEEEEEE",
+			"id": "4"		
 		}
 
 	]
