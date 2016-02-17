@@ -7,7 +7,7 @@ exports.view = function(req, res){
 	var username = req.query.username;
 	var password =  req.query.password;
 	var email = req.query.email;
-	console.log(username);
+	//console.log(username);
 	var newAccount = {
 		"username": req.query.username,
 		"password": req.query.password,
@@ -15,7 +15,8 @@ exports.view = function(req, res){
 	//$("#submitBtn")
 	//console.log(data);
 	};
-	if(username === undefined || password === undefined || email === undefined) {
+	console.log(username);
+	if(!username || !password || !email) {
 
 	}
 	else { 

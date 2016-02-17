@@ -1,7 +1,7 @@
 // Get all of our friend data
-var accountData = require('../accounts.json');
+//var accountData = localStorage.getItem("userAccount");
 
 exports.view = function(req, res){
-	console.log(accountData);
-	res.render('home', accountData);
+//	console.log(accountData);
+	res.render('home');
 };
