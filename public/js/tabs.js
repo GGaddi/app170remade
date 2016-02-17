@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	initializePage();
 });
@@ -26,6 +25,11 @@ function viewItem (e) {
 
 	$('.desc h1').html(itemID);
 	$('.desc p').html(itemDesc);
+
+	if ($(this).hasClass('item-curr'))
+		$(this).removeClass('item-curr');
+	else
+		$(this).addClass('item-curr');
 
 	//var url = "/item/" + itemID;
 

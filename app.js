@@ -15,6 +15,7 @@ var friends = require('./routes/friends')
 var group = require('./routes/group')
 var quest = require('./routes/quest')
 var self = require('./routes/self')
+var profile = require('./routes/self')
 var shop = require('./routes/shop')
 var adventure = require('./routes/adventure')
 // Example route
@@ -52,6 +53,7 @@ app.get('/group', group.view);
 app.get('/home', home.view);
 app.get('/quest', quest.view);
 app.get('/self', self.view);
+app.get('/profile/:id', self.viewProfile);
 app.get('/shop', shop.view);
 app.get('/item/:id', shop.itemInfo);
 app.get('/adventure', adventure.view);

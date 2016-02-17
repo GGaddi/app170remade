@@ -3,17 +3,23 @@
 		{
 			"username": "Gabriel",
 			"password": "Gaddi",
-			"email": "pinoyboy@gmail.com"			
+			"email": "pinoyboy@gmail.com",
+			"id": "1",		
+			"message": "i want sushi"	
 		},
 		{
 			"username": "Alicia",
 			"password": "Ning",
-			"email": "Alicia@gmail.com"			
+			"email": "Alicia@gmail.com",
+			"id": "2",		
+			"message": "i want death"
 		},
 		{
 			"username": "Michelle",
 			"password": "Nguyen",
-			"email": "Michelle@gmail.com"			
+			"email": "Michelle@gmail.com",	
+			"id": "3",
+			"message": "i want koyasu out of my life"		
 		}
 
 	]
