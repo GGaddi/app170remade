@@ -54,3 +54,8 @@
 .grid-curr {
 	display: block!important;
 }
+
+
+.item-curr {
+	background-color: #eeeeee;
+}
