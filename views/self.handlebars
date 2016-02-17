@@ -10,6 +10,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/self.js"></script>
 </head>
 
 <body>
@@ -28,8 +31,10 @@
 				<img src="http://placehold.it/170x170"/>
 				<div class="desc">
 					<div class="text">
-						<h1>yourname <img src="http://placehold.it/15x15"/></h1>
-						<p>your personal message goes here</p>
+						<form id="self-form">
+							<h1><div id="namefield">yourname <a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a></div></h1>
+							<p>your personal message goes here</p>
+						</form>
 					</div>
 				</div>
 			</div>

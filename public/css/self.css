@@ -16,6 +16,11 @@ body {
 	margin-top: 8px;
 }
 
+#nameIn {
+	font-family: 'Patua One', cursive;
+	width: 120px;
+}
+
 #info .bar {
 	background-color: #000000;
 	height: 5px;
