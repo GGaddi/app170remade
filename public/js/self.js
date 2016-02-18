@@ -1,3 +1,5 @@
+var change;
+
 $(document).ready(function(){
 	initializePage();
 });
@@ -5,6 +7,8 @@ $(document).ready(function(){
 function initializePage() {
 	$("#namebtn").click(editName);
 	$("#namebtnconfirm").click(confirmName);
+	$("#save").click(saveChanges);
+	change = 0;
 }
 
 function editName (e) {
@@ -22,6 +26,8 @@ function confirmName (e) {
 	e.preventDefault();
 
 	var newName = $('#nameIn').val();
+	localStorage.setItem("newName", newName);
+	change = 1;
 
 	var htmlString = newName + 
 	'<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>';
@@ -29,4 +35,17 @@ function confirmName (e) {
 	$('#namefield').html(htmlString);
 
 	$("#namebtn").click(editName);
+}
+
+function saveChanges (e) {
+	//var newName = $(this).val();
+	console.log("I am working");
+	if (change == 1) {
+		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+		user.charName = localStorage.getItem("newName");
+		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+	}
+	/*var newNameWhole = document.getElementById("namefield").innerHTML;
+	var newName = newNameWhole.replace('<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>', ''); */
+	console.log(change);
 }

@@ -23,7 +23,7 @@
 			</div>
 			<div class="name">
 				<script type="text/javascript">
-					var user = JSON.parse(localStorage.getItem("userAccount"));
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 					document.write(user.charName);
 				</script>
 			</div>
@@ -31,7 +31,7 @@
 				<img src="http://placehold.it/225x225"/> 
 				<div class="lvl">
 					<script type="text/javascript">
-					var user = JSON.parse(localStorage.getItem("userAccount"));
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 					document.write(user.level);
 					</script>
 				</div>
@@ -52,7 +52,7 @@
 				<img src="/imgs/moneys.png"/>
 				<div class="gold">
 					<script type="text/javascript">
-					var user = JSON.parse(localStorage.getItem("userAccount"));
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 					document.write(user.currency);
 					</script>
 				</div>
