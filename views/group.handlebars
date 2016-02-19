@@ -5,18 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<link rel="stylesheet" type="text/css" href="/css/group.css">
-	<link rel="stylesheet" type="text/css" href="/css/global.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/help.js"></script>
+	{{> imports}}
 </head>
 
 <body>
 
+	{{> help-group}}
+
 	<div id="wrap">
 		<div id="content">
 			{{> topbar-front}}
-				group adventure
+				groups
 			{{> topbar-back}}
 
 			<h1>what will you do?</h1>
@@ -25,16 +27,9 @@
 		
 		</div>
 
-		<div id="navbar">
-			<div id="stats">
-				<div class="exp">EXP</div>
-				<div class="exp-bar">&nbsp;</div>
-				<img src="imgs/moneys.png"/>
-				<div class="gold">50,000</div>
-			</div>
+			{{> stats}}
 
 			{{> menu}}
-		</div>
 	</div>
 
 </body>

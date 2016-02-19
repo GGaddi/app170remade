@@ -9,10 +9,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/self.js"></script>
-	{{> imports}}
+	<script src="/js/help.js"></script>
+		{{> imports}}
 </head>
 
 <body>
+
+	{{> help-self}}
 
 	<div id="wrap">
 		<div id="content">
@@ -53,21 +56,31 @@
 
 
 				<div class="tabs">
-					<img src="imgs/top-tab.png" name="top-tab"/><img src="imgs/bottom-tab.png" name="bottom-tab"/><img src="imgs/hat-tab.png" name="hat-tab"/><img src="imgs/weapon-tab.png" name="weapon-tab"/><img src="imgs/stylin-tab.png" name="stylin-tab"/><img src="imgs/pet-tab.png" name="pet-tab"/>
+					<img src="imgs/top-tab.png" name="top-tab" title="(shirt name)"/><img src="imgs/bottom-tab.png" name="bottom-tab" title="(bottom name)"/><img src="imgs/hat-tab.png" name="hat-tab" title="(hat name)"/><img src="imgs/weapon-tab.png" name="weapon-tab" title="(weapon name)"/><img src="imgs/stylin-tab.png" name="stylin-tab" title="(accessory name)"/><img src="imgs/pet-tab.png" name="pet-tab" title="(pet name)"/>
 					<!-- use js/jquery in order to replace img name with {{name}}-off.png -->
 				</div>
 
 				<div class="lvl">
-					<div class="bar">&nbsp;</div><h1>LVL 50</h1><div class="bar">&nbsp;</div>
+					<div class="bar">&nbsp;</div><h1>LVL 
+					<script type="text/javascript">
+					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+					document.write(user.level);
+					</script>
+				</h1><div class="bar">&nbsp;</div>
 				</div>
 
 				<div class="exp">EXPERIENCE</div> <div class="exp-bar">
 					<div class="exp-progress" style="width: 20%">&nbsp;</div>
 				</div>
-				<div class="exp-txt">500/1,000</div>
+				<div class="exp-txt">200/1,000</div>
 
 				<div class="money">
-					<div class="exp mons">MONEY</div> <img src="imgs/moneys.png" class="coin"/> <div class="gold">10,000,000</div>
+					<div class="exp mons">MONEY</div> <img src="imgs/moneys.png" class="coin"/> <div class="gold">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
 				</div>
 
 				<div class="priv">

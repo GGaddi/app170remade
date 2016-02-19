@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	initializePage();
+	$('.lookpop').hide();
+	$('.addpop').hide();
+	$('.delpop').hide();
 });
 
 function initializePage() {
@@ -12,6 +15,24 @@ function initializePage() {
 		$(this).addClass('tabe-curr');
 		$("#"+tab_id).addClass('flist-curr');
 		});
+
+	$('.lookup').click(function() {
+		$('.lookpop').show()
+	});
+
+	$('.adding').click(function() {
+		$('.addpop').show()
+	});
+
+	$('.deleting').click(function() {
+		$('.delpop').show()
+	});
+
+	$(".close").click(function(){
+		$('.delpop').hide()
+		$('.addpop').hide()
+		$('.lookpop').hide()
+	});
 }
 
 function viewItem (e) {

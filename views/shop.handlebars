@@ -10,11 +10,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="/js/tabs.js"></script>
+	<script src="/js/help.js"></script>
+	<script src="/js/shop.js"></script>
 
 	{{> imports}}
 </head>
 
 <body>
+	{{> checkout}}
+	{{> help-shop}}
 
 	<div id="wrap">
 		<div id="content">
@@ -34,12 +38,22 @@
 
 			<div id="money"> 
 				<img src="imgs/moneys.png" class="coins before"/>
-					<div class="gold bef" id="money-before">003,000</div>
+					<div class="gold bef" id="money-before">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
 
 				<img src="imgs/change-arrow.gif" class="arrow"/>
 
 				<img src="imgs/moneys.png" class="coins"/>
-					<div class="gold" id="money-after">003,500</div>
+					<div class="gold" id="money-after">
+						<script type="text/javascript">
+						var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+						document.write(user.currency);
+						</script>
+					</div>
 			</div>
 
 
@@ -177,7 +191,7 @@
 			</div>
 
 			<div id="buttons">
-				<img src="imgs/reset.png"/><button type="button" name="save">checkout</button>
+				<img src="imgs/reset.png" id="reset"/><button type="button" id="checkout">checkout</button>
 			</div>
 
 		</div>

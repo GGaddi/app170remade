@@ -152,22 +152,23 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    margin-top: 110px;
+    margin-top: 90px;
     z-index: 4;
     padding: 25px;
     text-align: justify;
     overflow: hidden;
+    border: solid 2px #ffffff;
 }
 
-span {
+.popup span {
 	float: right;
 	height: 20px;
-  width: 20px;
-  margin-top: -10px;
-  margin-right: -10px;
-  line-height: 20px;
+	width: 20px;
+	margin-top: -10px;
+	margin-right: -10px;
+	line-height: 20px;
 	font-family: 'Patua One',serif;
-  font-size: 25px;
+	font-size: 25px;
 }
 
 .popup h1 {
@@ -176,6 +177,8 @@ span {
   font-weight: normal;
   text-transform: uppercase;
   margin: 0px;
+  text-align: center;
+  letter-spacing: -1px;
 }
 
 .popup p {

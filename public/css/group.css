@@ -3,7 +3,7 @@ body {
 	background-color: #dddddd;
 }
 
-h1 {
+#content h1 {
 	text-align: center;
 	font-family: 'Patua One',cursive;
 	font-size: 35px;

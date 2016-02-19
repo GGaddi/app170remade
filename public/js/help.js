@@ -1,11 +1,11 @@
 $(document).ready(function(){
-$('.popup').hide()
+	$('.popup').hide()
 
 	$("#faq").click(function() {
-		$('.popup').delay(1000).show()
+		$('.popup').show()
 	});
 
 	$("#close").click(function(){
-		$('.popup').delay(1000).hide()
+		$('.popup').hide()
 	});
 });

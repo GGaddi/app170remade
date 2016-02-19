@@ -16,6 +16,10 @@ function initializePage() {
 		});
 
 	$('.entries').click(viewItem);
+	
+	$('#reset').click(function() {
+		$('.entries').removeClass("item-curr");
+	});
 }
 
 function viewItem (e) {
