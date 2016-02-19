@@ -23,7 +23,11 @@
 		<div id="content">
 			<div id="timer">
 				<div class="clock">
-					<div class="timer" data-seconds-left=1800></div>
+					<script type="text/javascript">
+						var seconds = localStorage.getItem("time");
+						var htmlString = "<div class='timer' data-seconds-left=" + seconds + "></div>";
+						document.write(htmlString);
+					</script>
 				</div>
 				<div class="progress">&nbsp;</div>
 			</div>
