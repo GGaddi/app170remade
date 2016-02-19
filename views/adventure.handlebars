@@ -5,8 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/adventure.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="/js/timer.js"></script>
 	{{> imports}}
+
+	<script>
+		$(function(){
+			$('.timer').startTimer();
+		});
+	</script>
+
 </head>
 
 <body>
@@ -14,7 +22,9 @@
 	<div id="wrap">
 		<div id="content">
 			<div id="timer">
-				<div class="clock">00:00:00</div>
+				<div class="clock">
+					<div class="timer" data-seconds-left=1800></div>
+				</div>
 				<div class="progress">&nbsp;</div>
 			</div>
 			<button type="button" name="end" onclick="location.href = 'home';">end adventure</button>
