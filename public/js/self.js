@@ -1,4 +1,5 @@
-var change;
+var nameChange;
+var messageChange;
 
 $(document).ready(function(){
 	initializePage();
@@ -9,7 +10,8 @@ function initializePage() {
 	$("#namebtnconfirm").click(confirmName);
 	$("#usermessage").click(editMsg);
 	$("#save").click(saveChanges);
-	change = 0;
+	nameChange = 0;
+	messageChange = 0;
 }
 
 function editName (e) {
@@ -28,7 +30,7 @@ function confirmName (e) {
 
 	var newName = $('#nameIn').val();
 	localStorage.setItem("newName", newName);
-	change = 1;
+	nameChange = 1;
 
 	var htmlString = newName + 
 	'<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>';
@@ -39,20 +41,30 @@ function confirmName (e) {
 }
 
 function editMsg (e) {
-	var htmlString = '<textarea id="msgIn" placeholder="enter a personal message...">';
+	messageChange = 1;
+	var htmlString = '<textarea id="msgIn" placeholder="enter a personal message..."></textarea>';
 
 	$("#messagefield").html(htmlString);
+	/*console.log(document.getElementById("msgIn").value);
+	var message = document.getElementById("msgIn").value);
+	localStorage.setItem("newMessage", message); */
 }
 
 function saveChanges (e) {
 	//var newName = $(this).val();
 	console.log("I am working");
-	if (change == 1) {
+	if (nameChange == 1) {
 		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 		user.charName = localStorage.getItem("newName");
 		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
 	}
+	if (messageChange == 1){
+		var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+		user.message = document.getElementById("msgIn").value;//localStorage.getItem("newMessage");
+		localStorage.setItem(localStorage.getItem("user"), JSON.stringify(user));
+	}
 	/*var newNameWhole = document.getElementById("namefield").innerHTML;
 	var newName = newNameWhole.replace('<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>', ''); */
-	console.log(change);
+	console.log(nameChange);
+	console.log(messageChange);
 }

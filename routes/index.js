@@ -11,7 +11,7 @@ exports.view = function(req, res){
 	var email = req.query.email;
 	var level = 1;
 	var currency = 1000;
-	var message = "";
+	var message = "enter a personal message here...";
 	//console.log(username);
 	var newAccount = {
 		"id": id,
