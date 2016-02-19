@@ -57,6 +57,18 @@
 	color: #999999;
 }
 
+#faq {
+  	float: right;
+	height: 20px;
+	margin-right: 10px;
+	margin-top: 26px;
+	line-height: 15px;
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	text-decoration: none;
+	color: #999999;
+}
+
 #navbar {
 	margin: auto;
 	text-align: center;
@@ -128,4 +140,47 @@
 	margin: 3px;
 	float: left;
 	padding: 2px;
+}
+
+.popup {
+    width: 300px;
+    height: 375px;
+    background: #eeeeee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 110px;
+    z-index: 4;
+    padding: 25px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+span {
+	float: right;
+	height: 20px;
+  width: 20px;
+  margin-top: -10px;
+  margin-right: -10px;
+  line-height: 20px;
+	font-family: 'Patua One',serif;
+  font-size: 25px;
+}
+
+.popup h1 {
+  font-family: 'Patua One',cursive;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.popup p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
 }

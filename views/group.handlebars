@@ -15,12 +15,9 @@
 
 	<div id="wrap">
 		<div id="content">
-			<div id="backbar">
-				<a href="home"><img src="imgs/home.png"/></a>
-				<div class="trail">
-					group adventure
-				</div>
-			</div>
+			{{> topbar-front}}
+				group adventure
+			{{> topbar-back}}
 
 			<h1>what will you do?</h1>
 			<button type="button" name="begin" onclick="location.href = 'quest';">host a group</button>

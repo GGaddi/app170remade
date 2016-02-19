@@ -3,31 +3,23 @@
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="/css/home.css">
-	<link rel="stylesheet" type="text/css" href="/css/help.css">
-	<link rel="stylesheet" type="text/css" href="/css/global.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/help.js"></script>
 
+	{{> imports}}
+
 </head>
 <body>
 
-	{{> help}}
+	{{> help-home}}
 
 	<div id="wrap">
 		<div id="content">
-			<div id="backbar">
-				<a href="home"><img src="imgs/home.png"/></a>
-				<div class="trail">
-					your home
-				</div>
-				<div id="logout"><a href = "/"> log out </a></div>
-			</div>
+			{{> topbar-front}}
+				your home
+			{{> topbar-back}}
 
 			<div class="name">
 				<script type="text/javascript">
@@ -45,8 +37,7 @@
 				</div>
 			</div>
 
-			<h1>go on an adventure? 
-			<div id="faq">(need help?)</div></h1>
+			<h1>go on an adventure?</h1>
 
 			<button type="button" name="solo" onclick="location.href = 'quest';">solo</button>
 			<button type="button" name="group" onclick="location.href = 'group';">group</button>

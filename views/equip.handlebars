@@ -6,14 +6,12 @@
 	
 	<link rel="stylesheet" type="text/css" href="/css/equip.css">
 	<link rel="stylesheet" type="text/css" href="/css/profile.css">
-	<link rel="stylesheet" type="text/css" href="/css/global.css">
 	<link rel="stylesheet" type="text/css" href="/css/tabs.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/tabs.js"></script>
+
+	{{> imports}}
 
 </head>
 
@@ -21,13 +19,9 @@
 
 	<div id="wrap">
 		<div id="content">
-			<div id="backbar">
-				<a href="home"><img src="imgs/home.png"/></a>
-				<div class="trail">
-					equipment
-				</div>
-				<div id="logout"><a href = "/"> log out </a></div>
-			</div>
+			{{> topbar-front}}
+				equipment
+			{{> topbar-back}}
 
 			<div id="self">	
 				<img src="http://placehold.it/170x170"/>

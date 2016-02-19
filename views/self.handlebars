@@ -6,26 +6,19 @@
 	
 	<link rel="stylesheet" type="text/css" href="/css/self.css">
 	<link rel="stylesheet" type="text/css" href="/css/profile.css">
-	<link rel="stylesheet" type="text/css" href="/css/global.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="/js/self.js"></script>
+	{{> imports}}
 </head>
 
 <body>
 
 	<div id="wrap">
 		<div id="content">
-			<div id="backbar">
-				<a href="home"><img src="imgs/home.png"/></a>
-				<div class="trail">
-					your profile
-				</div>
-				<div id="logout"><a href = "/"> log out </a></div>
-			</div>
+			{{> topbar-front}}
+				your profile
+			{{> topbar-back}}
 
 			<div id="self">	
 			<img src="http://placehold.it/170x170"/>

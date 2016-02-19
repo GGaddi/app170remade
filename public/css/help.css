@@ -1,6 +1,6 @@
 .popup {
-    width: 250px;
-    height: 325px;
+    width: 300px;
+    height: 375px;
     background: #eeeeee;
     position: absolute;
     top: 0;
@@ -11,25 +11,32 @@
     margin-top: 110px;
     z-index: 4;
     padding: 25px;
-}
-span {
-	float: right;
-	padding: 3px 6px;
-	background-color: red;
-	border-radius: 40px;
-	cursor: pointer;
+    text-align: justify;
+    overflow: hidden;
 }
 
-#faq {
-  width: 0px;
-  overflow: visible;
-  font-size: 14px;  
+span {
+	float: right;
+	height: 20px;
+  width: 20px;
+  margin-top: -10px;
+  margin-right: -10px;
+  line-height: 20px;
+	font-family: 'Patua One',serif;
+  font-size: 25px;
+}
+
+.popup h1 {
+  font-family: 'Patua One',cursive;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.popup p {
   font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
   line-height: 12px;
-  position: absolute;
-  z-index: 1;
-  right: 55px;
-  bottom: 135px;
-  color: #000000;
-  font-weight: bold;
+  font-weight: normal;
 }
