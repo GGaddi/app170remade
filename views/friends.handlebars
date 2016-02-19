@@ -32,7 +32,10 @@
 
 			<div class="flist flist-curr" id="tab-1">
 				<form id="flist">
-					<input type="text" name="search" placeholder="search" /><img src="https://placehold.it/35x35"/>
+					<input type="text" name="search" placeholder="search" />
+					<div id="toggledelete">
+						<a href="#"><img src="imgs/friends-delete-toggleoff.png" class="delete-off" alt="delete friends"></a>
+					</div>
 				</form>
 				
 				<div id="info">
@@ -43,9 +46,11 @@
 							<div class="level">{{level}}</div>
 							<div class="name">{{username}}</div>
 							<div class="desc">{{description}}</div>
-							<div class="prof lookup">
-								<img src="/imgs/friends-viewprofile.png"/>
-								<div class="prof-bg">&nbsp;</div>
+							<div id="action">
+								<div class="prof lookup">
+									<img src="/imgs/friends-viewprofile.png"/>
+									<div class="prof-bg">&nbsp;</div>
+								</div>
 							</div>
 						</div>
 						{{/each}}
@@ -56,7 +61,10 @@
 
 				<div class="flist" id="tab-2">
 				<form id="flist">
-					<input type="text" name="search" placeholder="search" /><img src="https://placehold.it/35x35"/>
+					<input type="text" name="search" placeholder="search" />
+					<div id="toggledelete">
+						<a href="#"><img src="imgs/friends-delete-toggleoff.png" id="delete-off" alt="delete friends"></a>
+					</div>
 				</form>
 				
 				<div id="info">
@@ -80,7 +88,10 @@
 
 				<div class="flist" id="tab-3">
 				<form id="flist">
-					<input type="text" name="search" placeholder="search" /><img src="https://placehold.it/35x35"/>
+					<input type="text" name="search" placeholder="search" />
+					<div id="toggledelete">
+						<a href="#"><img src="imgs/friends-delete-toggleoff.png" id="delete-off" alt="delete friends"></a>
+					</div>
 				</form>
 				
 				<div id="info">

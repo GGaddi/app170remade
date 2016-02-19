@@ -33,6 +33,60 @@ function initializePage() {
 		$('.addpop').hide()
 		$('.lookpop').hide()
 	});
+
+	//$('#toggledelete').click(deleteToggle);
+	$('.delete-off').click(deleteOn);
+	$('.delete-on').click(deleteOff);
+}
+
+// function deleteToggle (e) {
+// 	e.preventDefault();
+
+// 	var id = document.getElementById("action");
+// 	var currClass = id.className;
+
+// 	console.log(currClass);
+
+// 	if (currClass == "prof lookup") {
+// 		var buttonString = '<a href="#"><img src="imgs/friends-delete-toggleon.png" alt="delete friends"></a>';
+// 		var profString = '<img src="/imgs/friends-delete.png"/><div class="prof-bg">&nbsp;</div>';
+
+// 		$(currClass).html(profString);
+
+// 		id.className = "prof deleting";
+// 	}
+// 	else if (currClass == "prof deleting") {
+// 		var buttonString = '<a href="#"><img src="imgs/friends-delete-toggleoff.png" alt="delete friends"></a>';
+// 		var profString = '<img src="/imgs/friends-viewprofile.png"/><div class="prof-bg">&nbsp;</div>';
+
+// 		$(currClass).html(profString);
+
+// 		id.className = "prof lookup";
+// 	}
+
+// 	$('#toggledelete').html(buttonString);
+// }
+
+function deleteOn (e) {
+	e.preventDefault;
+
+	var btnString = '<a href="#"><img src="imgs/friends-delete-toggleon.png" class="delete-on" alt="delete friends"></a>';
+	var profString = '<div class="prof deleting"><img src="/imgs/friends-delete.png"/><div class="prof-bg">&nbsp;</div></div>';
+
+	//$('#action').html(profString);
+	$('#toggledelete').html(btnString);
+	$('.delete-on').click(deleteOff);
+}
+
+function deleteOff (e) {
+	e.preventDefault;
+
+	var btnString = '<a href="#"><img src="imgs/friends-delete-toggleoff.png" class="delete-off" alt="delete friends"></a>';
+	var profString = '<div class="prof lookup"><img src="/imgs/friends-viewprofile.png"/><div class="prof-bg">&nbsp;</div></div>';
+
+	//$('#action').html(profString);
+	$('#toggledelete').html(btnString);
+	$('.delete-off').click(deleteOn);
 }
 
 function viewItem (e) {
