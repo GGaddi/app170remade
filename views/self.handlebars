@@ -34,7 +34,16 @@
 								<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>
 							</div>
 						</h1>
-						<p>your personal message goes here</p>
+							<!--<p>your personal message goes here</p>-->
+							<div id="messagefield">
+								<script type="text/javascript">
+									var message = JSON.parse(localStorage.getItem("userAccount"));
+									//var htmlString = "<textarea id='descIn' placeholder=" + user.message + " maxlength='50'></textarea>";
+									var htmlString = "<p id='usermessage'>" + user.message + "</p>";
+									document.write(htmlString);
+								</script>
+							</div>
+							<!--<textarea id="descIn" placeholder=message></textarea>-->
 					</form>
 				</div>
 			</div>

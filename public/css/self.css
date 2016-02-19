@@ -151,3 +151,30 @@ button[type="button"] {
 	margin-top: 12px;
 	margin-left: 5px;
 }
+
+input[type="submit"] {
+	clear: both;
+	height: 35px;
+	width: 345px;
+	border: 0px;
+	background-color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 3px #aaaaaa;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #222222;
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+#self .desc .text #msgIn {
+	max-width: 95%;
+	max-height: 100%;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	height: 97px;
+	line-height: 12px;
+}
