@@ -14,12 +14,20 @@ body {
 	width: 124px;
 	float: left;
 	margin-top: 8px;
+	height: 30px;
 }
 
 #nameIn {
 	font-family: 'Patua One', cursive;
+	font-size: 12px;
 	width: 120px;
+	height: 20px;
+	display: block;
+	float: left;
+	border: 0px;
+	padding-left: 4px;
 }
+
 
 #info .bar {
 	background-color: #000000;

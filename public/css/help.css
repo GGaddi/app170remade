@@ -1,0 +1,35 @@
+.popup {
+    width: 250px;
+    height: 325px;
+    background: #eeeeee;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 110px;
+    z-index: 4;
+    padding: 25px;
+}
+span {
+	float: right;
+	padding: 3px 6px;
+	background-color: red;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+#faq {
+  width: 0px;
+  overflow: visible;
+  font-size: 14px;  
+  font-family: 'Open Sans',sans-serif;
+  line-height: 12px;
+  position: absolute;
+  z-index: 1;
+  right: 55px;
+  bottom: 135px;
+  color: #000000;
+  font-weight: bold;
+}

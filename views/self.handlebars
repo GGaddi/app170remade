@@ -28,20 +28,23 @@
 			</div>
 
 			<div id="self">	
-				<img src="http://placehold.it/170x170"/>
-				<div class="desc">
-					<div class="text">
-						<form id="self-form">
-							<h1><div id="namefield">
+			<img src="http://placehold.it/170x170"/>
+			<div class="desc">
+				<div class="text">
+					<form id="self-form">
+						<h1>
+							<div id="namefield">
 								<script type="text/javascript">
-									var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
+								var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
 									document.write(user.charName);
 								</script>
-								<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a></div></h1>
-							<p>your personal message goes here</p>
-						</form>
-					</div>
+								<a href="#"><img src="http://placehold.it/15x15"/ id="namebtn"></a>
+							</div>
+						</h1>
+						<p>your personal message goes here</p>
+					</form>
 				</div>
+			</div>
 			</div>
 
 			<div id="info">
@@ -81,12 +84,7 @@
 				&nbsp;
 			</div>
 
-			<div id="menu">
-				<a href="self"><img src="imgs/self.png" alt="self"/></a>
-				<a href="equip"><img src="imgs/equip.png" alt="equip"/></a>
-				<a href="shop"><img src="imgs/shop.png" alt="shop"/></a>
-				<a href="friends"><img src="imgs/friends.png" alt="friends"/></a>
-			</div>
+			{{> menu}}
 		</div>
 	</div>
 
