@@ -131,7 +131,7 @@ function handleLogin(result){
 				"email": email,
 				"level": 1,
 				"currency": 1000,
-				"message": ""
+				"message": "enter a personal message here..."
 			};
     		/*item ["username"] = username;
     		item ["password"] = password;
