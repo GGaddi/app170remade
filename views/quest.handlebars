@@ -15,9 +15,11 @@
 
 	<div id="wrap">
 		<div id="content">
-			{{> topbar-front}}
-				quest details
-			{{> topbar-back}}
+			<div id="backbar">
+				<a href="home"><img src="imgs/home.png"/></a>
+				<div class="trail" style="letter-spacing: -1px;">
+					quest details
+				{{> topbar-back}}
 
 			<form id="quest">
 
@@ -30,21 +32,14 @@
 				<div id="boss-time">
 					every <input type="tel" name="boss-hr" id = "boss-hr" value="01"/> hours, <input type="tel" name="boss-min" id = "boss-min" value="00"/> minutes
 				</div>
-
 				<button type="button" name="begin" id = "begin" onclick="location.href = 'adventure';">begin adventure</button>
 			</form>
 		</div>
 
-		<div id="navbar">
-			<div id="stats">
-				<div class="exp">EXP</div>
-				<div class="exp-bar">&nbsp;</div>
-				<img src="imgs/moneys.png"/>
-				<div class="gold">50,000</div>
-			</div>
+		{{> stats}}
 
-			{{> menu}}
-		</div>
+		{{> menu}}
 	</div>
 
 </body>
+</html>

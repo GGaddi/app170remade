@@ -6,6 +6,7 @@ body {
 
 #quest {
 	width: 350px;
+	margin: auto;
 	margin-top: 70px;
 }
 
@@ -38,7 +39,6 @@ body {
 	width: 350px;
 	height: 55px;
 	border: 0px;
-	margin-top: 5px;
 	background-color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;

@@ -3,16 +3,36 @@ body {
 	background-color: #dddddd;
 }
 
+#etabs {
+	clear: both;
+	width: 350px;
+	margin-top: -25px;
+	text-align: center;
+	list-style: none;
+	margin-left: -40px;
+}
+
 .tabs {
 	clear: both;
 	margin-top: 10px;
 	margin-left: 6px;
+	width: 345px;
 }
 
-.tabs img {
+.tabe {
 	float: left;
-	border: solid 2px #ffffff;
 	border-bottom: 0px;
+	height: 50px;
+	width: 114px;
+	color: #999999;
+	list-style: none;
+	font-family: 'Patua One',serif;
+	font-size: 25px;
+	line-height: 70px;
+}
+
+.tabe-curr {
+	color: #000000;
 }
 
 .flist {
@@ -21,6 +41,11 @@ body {
 	display: inline-block;
 	width: 350px;
 	overflow: hidden;
+	display: none;
+}
+
+.flist-curr {
+	display: block;
 }
 
 .flist img {
@@ -107,7 +132,7 @@ body {
 }
 
 #info .desc {
-	width: 180px;
+	width: 175px;
 	float: left;
 	overflow: hidden;
 	margin-top: 5px;
