@@ -19,6 +19,7 @@ var profile = require('./routes/self')
 var shop = require('./routes/shop')
 var checkout = require('./routes/checkout')
 var adventure = require('./routes/adventure')
+var join = require('./routes/join')
 // Example route
 // var user = require('./routes/user');
 //var add = require('./routes/add');
@@ -59,6 +60,7 @@ app.get('/shop', shop.view);
 app.get('/checkout', checkout.view);
 app.get('/item/:id', shop.itemInfo);
 app.get('/adventure', adventure.view);
+app.get('/join', join.view);
 
 // Example route
 // app.get('/users', user.list);
