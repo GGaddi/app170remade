@@ -92,7 +92,10 @@ function handleLogin(result){
 			for(var i = 0; i < result['accounts'].length; i++){
 				if(result.accounts[i].username == username && result.accounts[i].password == password) {
 					allow = 1;
-					localStorage.setItem("userAccount", JSON.stringify(result.accounts[i]));
+					localStorage.setItem("user", username);
+					if(localStorage.getItem(username) == null) {
+						localStorage.setItem( username, JSON.stringify(result.accounts[i]));
+					}
 					break;
 				}
 			}
@@ -142,7 +145,8 @@ function handleLogin(result){
 				result["accounts"].push(jsonObj);
 			}); */
 			jsonString = JSON.stringify(jsonObj);
-			localStorage.setItem("userAccount", jsonString);
+			localStorage.setItem("user", username);
+			localStorage.setItem(username, jsonString);
 			//console.log("I am running");
 			console.log(jsonString);
 			console.log(jsonObj);
