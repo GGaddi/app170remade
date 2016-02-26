@@ -18,7 +18,7 @@
 	<div id="wrap">
 		<div id="content">
 			{{> topbar-front}}
-				your home
+				home
 			{{> topbar-back}}
 
 			<div class="name">
@@ -32,7 +32,7 @@
 				<div class="lvl">
 					<script type="text/javascript">
 					var user = JSON.parse(localStorage.getItem(localStorage.getItem("user")));
-					document.write(user.level);
+					document.write("lv." + user.level);
 					</script>
 				</div>
 			</div>
