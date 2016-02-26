@@ -29,14 +29,14 @@ function viewItem (e) {
 	var itemType = $(this).attr('type');
 	var itemID	 = $(this).attr('ids');
 	var category = 0;
-	if( itemType="top" ) category = 1;
-	else if ( itemType="bottom") category = 2;
-	else if ( itemType="hat") category = 3;
-	else if ( itemType="weapon") category = 4;
-	else if ( itemType="style") category = 5;
+	if( itemType=="top" ) category = 1;
+	else if ( itemType=="bottom") category = 2;
+	else if ( itemType=="hat") category = 3;
+	else if ( itemType=="weapon") category = 4;
+	else if ( itemType=="style") category = 5;
 	else category = 6;
 	//console.log("user clicked on item " + itemID);
-
+	console.log("category: " + category + " type: " + itemType);
 	$('.desc h1').html(itemName);
 	$('.desc p').html(itemDesc);
 
