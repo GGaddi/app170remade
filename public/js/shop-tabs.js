@@ -19,13 +19,12 @@ function initializePage() {
 	
 	$('#reset').click(function() {
 		$('.entries').removeClass("item-curr");
-		$('.clothes').hide();
 	});
 }
 
 function viewItem (e) {
-	var itemID = $(this).closest('.entries').attr('id');
-	var itemDesc = $(this).closest('.entries').attr('alt');
+	var itemID = $(this).attr('id');
+	var itemDesc = $(this).attr('alt');
 	//console.log("user clicked on item " + itemID);
 
 	$('.desc h1').html(itemID);
