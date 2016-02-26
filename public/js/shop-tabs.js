@@ -37,7 +37,7 @@ function viewItem (e) {
 	else category = 6;
 	//console.log("user clicked on item " + itemID);
 
-	$('.desc h1').html(itemID);
+	$('.desc h1').html(itemName);
 	$('.desc p').html(itemDesc);
 
 	if ($(this).hasClass('item-curr')) {
