@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 	$("#faq").click(function() {
 		$('.popup').show()
+  		ga('send','event','help','click');
 	});
 
 	$("#close").click(function(){
