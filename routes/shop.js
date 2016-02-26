@@ -146,7 +146,7 @@ exports.view = function(req, res){
 				'id': 'w-001',
 				'lvl': 1,
 				'price': 0,
-				'img': 'http://placehold.it/105x105',
+				'img': 'imgs/items/w-001.png',
 				'description': 'we all have to start somewhere.'			
 			}
 		],
