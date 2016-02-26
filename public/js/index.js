@@ -23,21 +23,33 @@ $(document).ready(function() {
 			$email.show();
 			$('#login').prepend($email);
 			$('#log').text("sign up!");
+			$('#log').setAttribute("id","reg");
 			$(this).text("(did you want to log in?)");
 		}
 		else {
 			$email.hide();
-			$('#log').text("log in!");
+			$('#reg').text("log in!");
+			$('#reg').setAttribute("id","log");
 			$(this).text("(or create an account)");
 		}
 	});
 	$('#log').click(login);
+	$('#reg').click(register);
 });
+
+function register(e) {
+	console.log("User clicked REGISTER button");
+	$.get("/register",handleRegister);
+}
 
 function login(e) {
 
 	console.log("User clicked LOGIN button");
 	$.get("/login", handleLogin);
+}
+
+function handleRegister(result){
+
 }
 
 function handleLogin(result){
@@ -49,18 +61,24 @@ function handleLogin(result){
 	var allow = 0;
 	$("input[class=account]").each(function() {
 		if($('#log').text() == "log in!"){ 
-			if( value == 0) {
+
+
+	var password = document.getElementById("password").value;
+	var username = document.getElementById("username").value;
+	var email = document.getElementById("email").value;
+
+			/*if( value == 0) {
 				username = $(this).val();
 				value = value +1;
 			}
 			else if (value == 1) {
 				password = $(this).val();
-			}
+			}*/
     		//var email = $(this).attr("name");
     		//console.log(username);
     		//console.log(password);
     		//console.log("Break");
-    	}
+    /*	}
     	else{
     		if( value == 0) {
 				email = $(this).val();
@@ -72,7 +90,7 @@ function handleLogin(result){
 			}
 			else if (value == 2){
 				password =  $(this).val();
-			}
+			}*/
     		/*console.log(username);
     		console.log(password);
     		console.log(email); */

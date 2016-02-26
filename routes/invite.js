@@ -3,5 +3,5 @@
 
 exports.view = function(req, res){
 //	console.log(accountData);
-	res.render('join');
+	res.render('invite');
 };
