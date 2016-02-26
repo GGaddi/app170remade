@@ -19,7 +19,7 @@ $(document).ready(function() {
 	//var $email = $('<input type="email" name="email" placeholder="e-mail"/>');
 	$('#register').click(function() {
 		//console.log("I am working.");
-		if( $(this).text() == "(or create an account)") {
+		if( $(this).text() == "(or create an account here)") {
 			$email.show();
 			$('#login').prepend($email);
 			$('#log').text("sign up!");
@@ -28,7 +28,7 @@ $(document).ready(function() {
 		else {
 			$email.hide();
 			$('#log').text("log in!");
-			$(this).text("(or create an account)");
+			$(this).text("(or create an account here)");
 		}
 	});
 	$('#log').click(login);
