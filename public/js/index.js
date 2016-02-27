@@ -48,20 +48,25 @@ function handleLogin(result){
 	var allow = 0;
 	$("input[class=account]").each(function() {
 		if($('#log').text() == "log in!"){ 
-			if( value == 0) {
+			username = document.getElementById("username").value;
+			password = document.getElementById("password").value;
+			/*if( value == 0) {
 				username = $(this).val();
 				value = value +1;
 			}
 			else if (value == 1) {
 				password = $(this).val();
-			}
+			} */
     		//var email = $(this).attr("name");
     		//console.log(username);
     		//console.log(password);
     		//console.log("Break");
     	}
     	else{
-    		if( value == 0) {
+    		username = document.getElementById("username").value;
+    		password = document.getElementById("password").value;
+    		email = document.getElementById("email").value;
+    		/*if( value == 0) {
 				email = $(this).val();
 				value = value +1;
 			}
@@ -71,7 +76,7 @@ function handleLogin(result){
 			}
 			else if (value == 2){
 				password =  $(this).val();
-			}
+			} */
     		/*console.log(username);
     		console.log(password);
     		console.log(email); */
