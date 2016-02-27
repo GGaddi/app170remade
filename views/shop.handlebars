@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/tabs.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="/js/tabs.js"></script>
+	<script src="/js/shop-tabs.js"></script>
 	<script src="/js/help.js"></script>
 	<script src="/js/shop.js"></script>
 
@@ -27,7 +27,9 @@
 			{{> topbar-back}}
 
 			<div id="self">	
-				<img src="../imgs/avatar-midi.png"/>
+				<div id="avvie">
+					<img src="/imgs/avatar-midi.png" id="base"/>
+				</div>
 				<div class="desc">
 					<div class="text">
 						<h1>item name</h1>
@@ -92,7 +94,7 @@
 
 					<div id="tab-1" class="grid grid-curr">
 						{{#each top-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" ids="{{id}}" name="{{name}}" type="top" alt="{{description}}">
 							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
@@ -108,7 +110,7 @@
 
 					<div id="tab-2" class="grid">
 						{{#each bottom-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" ids="{{id}}" name="{{name}}" type="bottom" alt="{{description}}">
 							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
@@ -125,8 +127,8 @@
 
 					<div id="tab-3" class="grid">
 						{{#each hat-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
-							<img src="{{img}}"/>
+						<div class="entries" ids="{{id}}" name="{{name}}" type="hat" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
 								{{price}}
@@ -141,8 +143,8 @@
 
 					<div id="tab-4" class="grid">
 						{{#each weapon-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
-							<img src="{{img}}"/>
+						<div class="entries" ids="{{id}}" name="{{name}}" type="weapon" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
 								{{price}}
@@ -158,8 +160,8 @@
 
 					<div id="tab-5" class="grid">
 						{{#each style-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
-							<img src="{{img}}"/>
+						<div class="entries" ids="{{id}}" name="{{name}}" type="style" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
 								{{price}}
@@ -175,8 +177,8 @@
 
 					<div id="tab-6" class="grid">
 						{{#each pet-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
-							<img src="{{img}}"/>
+						<div class="entries" ids="{{id}}" name="{{name}}" type="pet" alt="{{description}}">
+							<img src="{{img}}" class="thing"/>
 							<div class="price">
 								<img src="imgs/moneys.png" class="coin"/>
 								{{price}}

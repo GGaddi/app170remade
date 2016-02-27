@@ -42,32 +42,13 @@
 	color: #000000;
 }
 
-#logout {
-	float: right;
-	height: 20px;
-	margin-right: 20px;
-	margin-top: 10px;
-}
-
-#logout a {
+/*.menu-top a {
 	line-height: 15px;
 	font-family: 'Patua One', cursive;
 	font-size: 15px;
 	text-decoration: none;
 	color: #999999;
-}
-
-#faq {
-  	float: right;
-	height: 20px;
-	margin-right: 10px;
-	margin-top: 26px;
-	line-height: 15px;
-	font-family: 'Patua One', cursive;
-	font-size: 15px;
-	text-decoration: none;
-	color: #999999;
-}
+}*/
 
 #navbar {
 	margin: auto;
@@ -153,7 +134,7 @@
     left: 0;
     margin: auto;
     margin-top: 90px;
-    z-index: 4;
+    z-index: 100;
     padding: 25px;
     text-align: justify;
     overflow: hidden;
@@ -188,13 +169,42 @@
   font-weight: normal;
 }
 
-#menu .menu-bottom {	
+.menu-bottom {	
 	height: 20px;
-	right: 0px;
-	top: 80px;
+	right: 20px;
+	top: 105px;
 	position: absolute;
+	line-height: 15px;
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	text-decoration: none;
+	color: #555555;
 }
 
-.menu-link {
-	top: 95px!important;
+.menu-bottom a {
+	text-decoration: none;
+	color: #555555;
 }
+
+
+
+.top-menu {
+	float: right;
+	height: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	line-height: 15px;
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	text-decoration: none;
+	color: #555555;
+}
+
+.top-menu a {
+	text-decoration: none;
+	color: #555555;
+}
+
+/*.menu-link {
+	top: 95px!important;
+}*/

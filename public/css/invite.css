@@ -19,6 +19,12 @@ body{
 	float: left;
 }
 
+.curr {
+	margin: 1px!important;
+	border: #ffffff 1px solid;
+	background-color: #ffffff;
+}
+
 button[type="button"] {
 	margin: auto;
 	width: 316px;

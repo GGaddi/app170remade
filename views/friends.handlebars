@@ -33,16 +33,14 @@
 			<div class="flist flist-curr" id="tab-1">
 				<form id="flist">
 					<input type="text" name="search" placeholder="search" />
-					<div id="toggledelete">
-						<a href="#"><img src="imgs/friends-delete-toggleoff.png" class="delete-off" alt="delete friends"></a>
-					</div>
+						<a href="#"><img src="/imgs/search.png" class="search-go"></a>					
 				</form>
 				
 				<div id="info">
 					<div id="info-in">
 						{{#each friends}}
 						<div class="entry">
-							<img src={{avatar}}/>
+							<img src="{{avatar}}"/>
 							<div class="level">{{level}}</div>
 							<div class="name">{{username}}</div>
 							<div class="desc">{{description}}</div>
@@ -62,16 +60,14 @@
 				<div class="flist" id="tab-2">
 				<form id="flist">
 					<input type="text" name="search" placeholder="search" />
-					<div id="toggledelete">
-						<a href="#"><img src="imgs/friends-delete-toggleoff.png" id="delete-off" alt="delete friends"></a>
-					</div>
+						<a href="#"><img src="/imgs/search.png" class="search-go"></a>
 				</form>
 				
 				<div id="info">
 					<div id="info-in">
 						{{#each friends}}
 						<div class="entry">
-							<img src={{avatar}}/>
+							<img src="{{avatar}}"/>
 							<div class="level">{{level}}</div>
 							<div class="name">{{username}}</div>
 							<div class="desc">{{description}}</div>
@@ -87,18 +83,12 @@
 
 
 				<div class="flist" id="tab-3">
-				<form id="flist">
-					<input type="text" name="search" placeholder="search" />
-					<div id="toggledelete">
-						<a href="#"><img src="imgs/friends-delete-toggleoff.png" id="delete-off" alt="delete friends"></a>
-					</div>
-				</form>
 				
-				<div id="info">
-					<div id="info-in">
+				<div id="info" class="info-remove">
+					<div id="info-in" class="info-remove">
 						{{#each friends}}
 						<div class="entry">
-							<img src={{avatar}}/>
+							<img src="{{avatar}}"/>
 							<div class="level">{{level}}</div>
 							<div class="name">{{username}}</div>
 							<div class="desc">{{description}}</div>

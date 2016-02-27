@@ -5,17 +5,24 @@
 	clear: both;
 }
 
+#avvie {
+	height: 180px;
+	width: 180px;
+	float: left;
+}
+
+
 #self img {
 	margin: 5px;
 	height: 170px;
 	width: 170px;
-	float: left;
+	position: absolute;
 }
 
 #self .desc {
 	width: 170px;
 	height: 180px;
-	float: left;
+	float: right;
 }
 
 #self .desc .text {
@@ -50,4 +57,20 @@
 	height: 15px;
 	width: 15px;
 	float: right;
+}
+
+#base {
+	position: absolute;
+	z-index: 1;
+}
+
+#top { z-index: 3; }
+#bottom { z-index: 2; }
+#hat { z-index: 5; }
+#weapon { z-index: 6; }
+#style { z-index: 4; }
+#pet { z-index: 7; }
+
+.clothes {
+	position: absolute;
 }

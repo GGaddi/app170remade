@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/tabs.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="/js/tabs.js"></script>
+	<script src="/js/equip-tabs.js"></script>
 	<script src="/js/help.js"></script>
 
 	{{> imports}}
@@ -25,7 +25,9 @@
 			{{> topbar-back}}
 
 			<div id="self">	
-				<img src="../imgs/avatar-midi.png"/>
+				<div id="avvie">
+					<img src="/imgs/avatar-midi.png" id="base"/>
+				</div>
 				<div class="desc">
 					<div class="text">
 						<h1>item name</h1>
@@ -68,7 +70,7 @@
 
 					<div id="tab-1" class="grid grid-curr">
 						{{#each top-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="top" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}
@@ -79,7 +81,7 @@
 
 					<div id="tab-2" class="grid">
 						{{#each bottom-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="bottom" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}
@@ -91,7 +93,7 @@
 
 					<div id="tab-3" class="grid">
 						{{#each hat-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="hat" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}
@@ -103,7 +105,7 @@
 
 					<div id="tab-4" class="grid">
 						{{#each weapon-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="weapon" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}
@@ -115,7 +117,7 @@
 
 					<div id="tab-5" class="grid">
 						{{#each style-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="style" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}
@@ -127,7 +129,7 @@
 
 					<div id="tab-6" class="grid">
 						{{#each pet-items}}
-						<div class="entries" id="{{name}}" alt="{{description}}">
+						<div class="entries" type="pet" ids="{{id}}" name="{{name}}" alt="{{description}}">
 							<img src="{{img}}"/>
 						</div>
 						{{/each}}

@@ -54,7 +54,7 @@ body {
 }
 
 #flist input[type="text"] {
-	width: 280px;
+	width: 278px;
 	height: 13px;
 	padding: 10px;
 	border: 0px;
@@ -93,6 +93,10 @@ body {
 	overflow: auto;
 }
 
+.info-remove {
+	height: 366px!important;
+}
+
 .entry {
 	clear: both;
 	height: 100px;
@@ -120,6 +124,7 @@ body {
 	text-align: right;
 	z-index: 2;
 }
+
 
 #info .name {
 	font-family: 'Patua One', cursive;

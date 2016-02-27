@@ -19,6 +19,7 @@ function initializePage() {
 	
 	$('#reset').click(function() {
 		$('.entries').removeClass("item-curr");
+		$('.clothes').hide();
 	});
 }
 
